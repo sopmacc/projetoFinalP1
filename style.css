@@ -1,0 +1,83 @@
+:root {
+  --bg: #f6f7f9;
+  --ink: #1d2433;
+  --accent: #1f5eff;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.topbar {
+  background: #fff;
+  border-bottom: 1px solid #e3e6ec;
+  padding: .75rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  font-weight: 700;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.login-card {
+  max-width: 400px;
+  margin: 8vh auto 0;
+}
+
+/* Lista de fotos */
+.photo-item {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  width: 100%;
+  text-align: left;
+  background: #fff;
+  border: 1px solid #e3e6ec;
+  border-radius: .5rem;
+  padding: .5rem .75rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.photo-item:hover,
+.photo-item:focus-visible {
+  border-color: var(--accent);
+  outline: none;
+  box-shadow: 0 0 0 .2rem rgba(31, 94, 255, .15);
+}
+
+.thumb {
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  object-fit: cover;
+  border-radius: 4px;
+  background: #dfe3ea;
+}
+
+.photo-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+/* Visualização ampliada */
+.photo-big {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: .5rem;
+  background: #dfe3ea;
+}
+
+.detail-title {
+  text-transform: capitalize;
+}
